@@ -19,10 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
-        .navbar-brand{
-            margin-left: 80px;
-            font-weight: bold;
-        }
+        
     </style>
 </head>
 <body>
@@ -37,19 +34,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                            <a class="navbar-brand" href="" onfocus="myFunction(this)">
+                        <li onclick="show_hide(this)">
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Your leave') }}
                             </a>
-                            <a class="navbar-brand" href="" onfocus="myFunction(this)">
+                        <li>
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Leaves') }}
                             </a>
-                            <a class="navbar-brand" href="" onfocus="myFunction(this)">
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Employees') }}
                             </a>
-                            <a class="navbar-brand" href="" onfocus="myFunction(this)">
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Positions') }}
                             </a>
-                            <a class="navbar-brand" href="" onfocus="myFunction(this)">
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Department') }}
                             </a>
                        
@@ -70,7 +69,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" style="text-transform:uppercaseb" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" style="text-transform:uppercase" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->firstName }} <span class="caret"></span>
                                 </a>
 

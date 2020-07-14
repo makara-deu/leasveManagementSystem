@@ -49895,3 +49895,18 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\leasveManagementSystem\
 /***/ })
 
 /******/ });
+
+// Menu 
+
+function changeColor(obj){
+  if (obj.style.opacity == '0.9'){
+    obj.style.opacity = '0.5';
+  }else{
+    obj.style.opacity = '0.9';
+  }
+}
+// 
+function show_hide(element){
+    element.style.border = 'underline';
+  }
+}
