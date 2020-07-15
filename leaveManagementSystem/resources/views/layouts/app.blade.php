@@ -26,19 +26,15 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li onclick="show_hide(this)">
                             <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Your leave') }}
                             </a>
-                        <li>
                             <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Leaves') }}
                             </a>
@@ -51,10 +47,7 @@
                             <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Department') }}
                             </a>
-                       
-                        
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
@@ -72,7 +65,6 @@
                                 <a id="navbarDropdown" style="text-transform:uppercase" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->firstName }} <span class="caret"></span>
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
