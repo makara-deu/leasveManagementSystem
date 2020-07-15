@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Menu routes 
+
+Route::get('/returnEmployeeView','EmployeeController@returnEmployeeView')->name('returnEmployeeView');
+Route::resource('employees', 'EmployeeController');
