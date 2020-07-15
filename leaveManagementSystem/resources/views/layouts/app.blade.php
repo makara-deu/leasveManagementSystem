@@ -38,7 +38,7 @@
                             <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">
                                 {{ __('Leaves') }}
                             </a>
-                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="{{ route('returnEmployeeView') }}" onfocus="myFunction(this)">
+                            <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="{{ route('employees.index') }}" onfocus="myFunction(this)">
                                 {{ __('Employees') }}
                             </a>
                             <a onmouseover="changeColor(this)" onmouseout="changeColor(this)" class="navbar-brand" href="" onfocus="myFunction(this)">

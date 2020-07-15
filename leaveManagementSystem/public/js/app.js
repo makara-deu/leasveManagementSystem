@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
+#/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -49905,5 +49905,29 @@ function changeColor(obj){
     obj.style.opacity = '0.9';
   }
 }
+
+
+
+  // function for research data
+    $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+     });
+  //  mouse hover on table
+     var trIndex = null;
+   $("#employee tr td").mouseenter(function() {
+     trIndex = $(this).parent();
+     $(trIndex).find("td:last-child").html('<a href="#"><i class="material-icons" style="color:red;">mode_delete</i></a>&nbsp;&nbsp;<a href="#"><i class="material-icons">mode_edit</i></a>');
+   });
+ // remove button on tr mouseleave
+  $("#employee tr td").mouseleave(function() {
+     $(trIndex).find('td:last-child').html("&nbsp;");
+   });
+  });
+
+
 
  

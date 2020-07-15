@@ -16,15 +16,14 @@ class EmployeeController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     public function returnEmployeeView(){
-         return view('pages.employeeView');
-     }
+    //  public function returnEmployeeView(){
+    //      return view('pages.employeeView');
+    //  }
+
     public function index()
     {
         $users = User::all();
-        $departments = Department::all();
-        $positions = Position::all();
-        return view('pages.employeeView', compact(['users','departments','positions']));
+        return view('pages.employeeView', compact('users'));
     }
 
     /**
