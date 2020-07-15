@@ -49905,8 +49905,5 @@ function changeColor(obj){
     obj.style.opacity = '0.9';
   }
 }
-// 
-function show_hide(element){
-    element.style.border = 'underline';
-  }
-}
+
+ 
